@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee6a4f4-1f1a-4c0e-ac59-f91637786d05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LocalizationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Localization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_01_000001_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_01_000002_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_01_000003_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Card.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Products.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/checkout/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/checkout/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/payment/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/payment/status.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/store-placetopay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/store-placetopay.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +172,7 @@
       <workItem from="1580576432095" duration="76000" />
       <workItem from="1580576535104" duration="38151000" />
       <workItem from="1580652977805" duration="41587000" />
-      <workItem from="1580697568068" duration="1418000" />
+      <workItem from="1580697568068" duration="2016000" />
     </task>
     <servers />
   </component>
