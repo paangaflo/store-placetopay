@@ -11,6 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+Auth::routes(['reset' => false]);
+
+Route::get('/products', 'ProductController@index');
+
+Route::get('/checkout/{product}/create', 'CheckoutController@create');
+
+Route::post('/checkout', 'CheckoutController@store');
+
+Route::get('/checkout/{order}', 'CheckoutController@show');
+
+Route::get('/checkout/list/{type}', 'CheckoutController@index');
+
+Route::get('/payment/{order}', 'PaymentController@show');
+
+Route::post('/payment', 'PaymentController@create');
+
+Route::get('/payment/status/{order}', 'PaymentController@index');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('lang/{locale}', 'LocalizationController@index');
