@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('storage/images/logos/placetopay-logo.svg') }}" class="img-fluid" width="200px" alt="logo">
+                    <img src="{{ env('AWS_URL_BUCKET').'/images/logos/placetopay-logo.svg' }}" class="img-fluid" width="200px" alt="logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -45,20 +45,20 @@
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 @switch($locale)
                                     @case('fr')
-                                    <img src="{{ asset('storage/images/flags/fr.png') }}" width="30px" height="20x"> French
+                                    <img src="{{ env('AWS_URL_BUCKET').'/images/flags/fr.png' }}" width="30px" height="20x"> French
                                     @break
                                     @case('es')
-                                    <img src="{{ asset('storage/images/flags/es.png') }}" width="30px" height="20x"> Spanish
+                                    <img src="{{ env('AWS_URL_BUCKET').'/images/flags/es.png' }}" width="30px" height="20x"> Spanish
                                     @break
                                     @default
-                                    <img src="{{ asset('storage/images/flags/us.png') }}" width="30px" height="20x"> English
+                                    <img src="{{ env('AWS_URL_BUCKET').'/images/flags/us.png' }}" width="30px" height="20x"> English
                                 @endswitch
                                 <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{url('/lang/en')}}"><img src="{{ asset('storage/images/flags/us.png') }}" width="30px" height="20x"> English</a>
-                                <a class="dropdown-item" href="{{url('/lang/fr')}}"><img src="{{ asset('storage/images/flags/fr.png') }}" width="30px" height="20x"> French</a>
-                                <a class="dropdown-item" href="{{url('/lang/es')}}"><img src="{{ asset('storage/images/flags/es.png') }}" width="30px" height="20x"> Spanish</a>
+                                <a class="dropdown-item" href="{{url('/lang/en')}}"><img src="{{ env('AWS_URL_BUCKET').'/images/flags/us.png' }}" width="30px" height="20x"> English</a>
+                                <a class="dropdown-item" href="{{url('/lang/fr')}}"><img src="{{ env('AWS_URL_BUCKET').'/images/flags/fr.png' }}" width="30px" height="20x"> French</a>
+                                <a class="dropdown-item" href="{{url('/lang/es')}}"><img src="{{ env('AWS_URL_BUCKET').'/images/flags/es.png' }}" width="30px" height="20x"> Spanish</a>
                             </div>
                         </li>
                         @guest

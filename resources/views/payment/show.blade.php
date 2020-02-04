@@ -26,7 +26,7 @@
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                            <img src="{{ asset('storage/images/logos/placetopay-logo.svg') }}" class="img-fluid" width="200px" alt="logo">
+                            <img src="{{ env('AWS_URL_BUCKET').'/images/logos/placetopay-logo.svg' }}" class="img-fluid" width="200px" alt="logo">
                         </div>
                     </div>
                     <div class="row">
