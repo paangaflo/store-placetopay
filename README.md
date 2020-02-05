@@ -1,77 +1,101 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="https://bucket-heroku-assets.s3.amazonaws.com/store-placetopay/images/logos/placetopay-logo.svg" width="400px" alt="logo"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Acerca del proyecto
 
-## About Laravel
+Tienda online que tiene por default nueve productos cargados; cada producto cuenta con, descripción, categoría, imagen del producto,  un stock de disponibilidad y un valor para comprar. Permite generar una simulación de comprar atreves de la pasarela de pagos de PlacetoPay.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Cuando ya no se encuentran disponibilidades del producto en stock el botón de compra es deshabilitado.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+La tienda tiene un menú desplegable con las siguientes opciones:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Total de pedidos registrado en la tienda.
 
-## Learning Laravel
+Total de pedidos registrados por el usuario.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Opción de salir del sistema.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Características de implementación
 
-## Laravel Sponsors
+Cuenta con internacionalización de lenguaje.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Las imágenes del proyecto son alojadas desde un servidor externo; bucket S3 de Amazon AWS.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+## Demo del proyecto
 
-## Contributing
+El demo se encuentra alojado en el siguiente hosting de Heroku:
+Para ingresar cree una cuenta en la opción de Registrer y después ingrese al sitio con la misma cuenta.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+[http://store-placetopay.herokuapp.com](http://store-placetopay.herokuapp.com)
 
-## Code of Conduct
+## Instalacion del proyecto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Clonar repositorio:
+```shell script
+git clone https://github.com/paangaflo/store-placetopay.git store-placetopay
+```
+Ingresamos a la carpeta:
+```shell script
+cd store-placetopay
+```
+Instalamos las dependencias de composer:
+```shell script
+composer install
+```
+Instalamos las dependencias de npm:
+```shell script
+npm install
+```
+Cree una copia de su archivo .env:
+```shell script
+cp .env.example .env
+```
+Genere una llave de encriptación para la app:
+```shell script
+php artisan key:generate
+```
+En el archivo .env, agregue información de la base de datos para permitir que Laravel se conecte a la base de datos. Los campos necesarios son los siguientes:
+```shell script
+DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD and DB_CONNECTION=mysql
+```
+Ejecute el comando migrate para inicializar la base de datos:
+```shell script
+php artisan migrate
+```
+Ejecute el comando migrate –seed  para la inserción de datos sobre la base de datos:
+```shell script
+php artisan migrate --seed
+```
+Compilar el proyecto en ambiente DEV:
+```shell script
+npm run dev
+```
+Desplegar en local el proyecto:
+```shell script
+php artisan serve
+```
+Ingresar en el navegador web a la siguiente ruta:
+```shell script
+http://127.0.0.1:8000
+```
+Debe ingresar en su archivo .env las credenciales de autenticación para consumir los servicios de la pasarela de pagos de PlacetoPay. Solicite las claves de ambiente desarrollo al personal administrativo de PlacetoPay.
+```shell script
+PLACETOPAY_API_SERVICE_URL_BASE=https://dev.placetopay.com/redirection/
+PLACETOPAY_API_SERVICE_LOGIN=
+PLACETOPAY_API_SERVICE_TRANKEY=
+```
+OPCIONAL: Para poder visualizar en el navegador web las imágenes del proyecto alojadas en el bucket S3 de Amazon AWS; debe solicitar al propietario del repositorio en GitHub las credenciales del mismo y agregarlas en las variables de entorno de su archivo .env (Por seguridad de la cuenta AWS las credenciales no son publicadas en esta documentación).
+```shell script
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=bucket-heroku-assets
+AWS_URL_BUCKET=https://bucket-heroku-assets.s3.amazonaws.com/store-placetopay
+```
+Si la instalación fue correcta podrá ver la siguiente imagen en su navegador web:
+<p align="center"><img src="https://bucket-heroku-assets.s3.amazonaws.com/store-placetopay/images/screen_project.png" width="700px" alt="logo"></p>
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
 
 ## License
 
