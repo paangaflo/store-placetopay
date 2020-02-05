@@ -32,7 +32,7 @@
                                     <th scope="col" class="text-center">{{ __('PHONE') }}</th>
                                     <th scope="col" class="text-center">{{ __('PRODUCT') }}</th>
                                     <th scope="col" class="text-center">{{ __('PRICE') }}</th>
-                                    <th scope="col" class="text-center">{{ __('STATE') }}</th>
+                                    <th scope="col" class="text-center">{{ __('STATUS') }}</th>
                                     @if($type == 'user')
                                         <th scope="col" class="text-center">{{ __('OPTIONS') }}</th>
                                     @endif
